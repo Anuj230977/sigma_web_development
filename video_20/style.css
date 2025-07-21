@@ -1,0 +1,12 @@
+div > p:nth-last-child(5){
+    color: red;
+    background-color: yellow;
+}
+/* div > p:first-child{
+    color: red;
+    background-color: yellow;
+} */
+div > p{
+    color: white;
+    background-color: blue;
+}
