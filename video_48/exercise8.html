@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8 solution</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            border-radius: 70px;
+            bottom: 0;
+            left: 0;
+            animation: AnimateX 3s linear 1s infinite, AnimateY 1s ease-out 1s infinite alternate;
+        }
+        .box2{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(223, 15, 147);
+            position: absolute;
+            border-radius: 70px;
+            bottom: 0;
+            left: 0;
+            animation: AnimateX 3s linear 1s infinite, AnimateY1 1s ease-out 1s infinite alternate-reverse;
+        }
+        .container{
+            position: relative;
+            height: 99vh;
+            width: 99vw;
+            background-color: aqua;
+        }
+        @keyframes AnimateX{
+            from{
+                left: 0%;
+                background-color: bisque;
+            }
+            to{
+                left: 90%;
+                background-color: black;
+            }
+        }
+        @keyframes AnimateY {
+            from{
+                bottom: 0%;
+                background-color: red;
+            }
+            to{
+                bottom: 90%;
+                background-color: rgb(0, 2, 2);
+            }
+        }
+        @keyframes AnimateY1 {
+            from{
+                bottom: 0%;
+                background-color: blue;
+            }
+            to{
+                bottom: 90%;
+                background-color: rgb(5, 253, 112);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+    </main>
+</body>
+</html>
