@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 10 solution</title>
+</head>
+
+<body>
+    <script>
+        rando = Math.random()
+        rando2 = Math.random()
+        rando3 = Math.random()
+        let first, second, third;
+        if (rando > 0.6) {
+            first = "crazy";
+        }
+        else if (rando > 0.3 && rando < 0.6) {
+            first = "amazing";
+        } else {
+            first = "fire";
+        }
+        if (rando2 > 0.6) {
+            second = "engine";
+        }
+        else if (rando2 > 0.3 && rando < 0.6) {
+            second = "food";
+        } else {
+            second = "garments";
+        }
+        if (rando3 > 0.6) {
+            third = "bors";
+        }
+        else if (rando3 > 0.3 && rando < 0.6) {
+            third = "limited";
+        } else {
+            third = "hub";
+        }
+        console.log(`${first}  ${second}  ${third}`);
+    </script>
+</body>
+
+</html>
